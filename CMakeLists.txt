@@ -86,14 +86,6 @@ target_link_libraries(System_WatchDog PRIVATE
     ${NPCAP_LIBRARIES}
 )
 
-# # Link platform-specific libraries
-# if(WIN32)
-#     target_link_libraries(System_WatchDog PRIVATE ${NPCAP_LIBRARIES})
-# elseif(UNIX AND NOT APPLE)
-#     target_link_libraries(System_WatchDog PRIVATE ${LIBPCAP_LIBRARIES})
-# endif()
-
-
 # # Add unit tests
 # add_executable(System_WatchDog_Tests
 #     src/Tests/TestProcessManager.cpp
